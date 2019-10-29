@@ -1,0 +1,45 @@
+{
+    "name": "php-formatter",
+    "displayName": "php-formatter",
+    "description": "Format Code In Place For Visual Studio Code",
+    "version": "0.1.0",
+    "publisher": "chuaple",
+    "repository": "https://github.com/chuaple/php-formatter",
+    "icon": "icon.jpg",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Other",
+        "Programming Languages",
+        "Formatters"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "galleryBanner": {
+        "color": "#e8e030",
+        "theme": "light"
+    },
+    "license": "MIT",
+    "main": "./extension",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "php-formatter",
+            "properties": {
+                "formatter.onSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "在保存文件时自动格式化。"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "publish": "vsce package"
+    },
+    "devDependencies": {
+        "vsce": "^1.68.0"
+    }
+}
