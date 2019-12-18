@@ -40,6 +40,6 @@
         "publish": "vsce package"
     },
     "devDependencies": {
-        "vsce": "^1.68.0"
+        "vsce": "^1.71.0"
     }
 }
