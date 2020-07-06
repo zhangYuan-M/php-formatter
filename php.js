@@ -6,7 +6,7 @@ const format = code => {
         code = code.trim();
         const comment = code.startsWith('/');
         if ('})]'.includes(code.charAt(0))) leval--;
-        if (code) code = `${' '.repeat(leval * 4)}${code}`;
+        if (code) code = `${' '.repeat(leval * 2)}${code}`;
         if ('{(['.includes(code.charAt(code.length - 1)) && !comment) leval++;
         return code;
     };
